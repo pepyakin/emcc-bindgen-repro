@@ -4,7 +4,7 @@
 
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
-pub fn add_safe(a: u32, b: u32) -> u32 {
+pub fn add_safe(a: u8, b: u8) -> u8 {
     unsafe {
         add(a, b)
     }
