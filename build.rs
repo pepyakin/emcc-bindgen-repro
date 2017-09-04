@@ -9,7 +9,6 @@ fn gen_bindings() {
         .header("adder.h")
         // Uncomment this to make build successful
         // .trust_clang_mangling(false)
-        .generate_comments(true)
         .generate()
         .expect("Unable to generate bindings");
 
