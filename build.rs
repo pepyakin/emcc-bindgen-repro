@@ -7,6 +7,7 @@ use std::env;
 fn gen_bindings() {
     let bindings = bindgen::Builder::default()
         .header("adder.h")
+        // Uncomment this to make build successful
         // .trust_clang_mangling(false)
         .generate_comments(true)
         .generate()
